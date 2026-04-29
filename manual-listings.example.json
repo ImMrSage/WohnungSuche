@@ -5,7 +5,10 @@
     "title": "1 Zimmer Wohnung in Hamburg",
     "city": "Hamburg",
     "location": "Hamburg-Wandsbek",
-    "warmRent": 645,
+    "coldRent": 470,
+    "nebenkosten": 83,
+    "heizkosten": 55,
+    "warmRent": 608,
     "rooms": 1,
     "area": 35,
     "url": "https://example.com/immomio-12345"

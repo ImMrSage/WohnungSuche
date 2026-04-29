@@ -76,9 +76,13 @@ export const config = {
   rootDir: ROOT_DIR,
   dataDir: path.join(ROOT_DIR, "data"),
   token: required("TELEGRAM_BOT_TOKEN"),
-  checkIntervalMinutes: numberEnv("CHECK_INTERVAL_MINUTES", 10),
+  checkIntervalMinutes: Math.min(Math.max(numberEnv("CHECK_INTERVAL_MINUTES", 20), 15), 30),
+  dailySummaryHour: numberEnv("DAILY_SUMMARY_HOUR", 20),
+  timezone: process.env.TIMEZONE?.trim() || "Europe/Berlin",
   targetCity: process.env.TARGET_CITY?.trim() || "Hamburg",
   maxWarmRent: numberEnv("MAX_WARM_RENT", 650),
+  softMaxWarmRent: numberEnv("SOFT_MAX_WARM_RENT", 700),
+  maxBruttokaltRent: numberEnv("MAX_BRUTTOKALT_RENT", 573),
   allowedChatIds: listEnv("TELEGRAM_ALLOWED_CHAT_IDS"),
   enableDemoSource: boolEnv("ENABLE_DEMO_SOURCE", true)
 };
