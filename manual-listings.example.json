@@ -1,0 +1,13 @@
+[
+  {
+    "id": "immomio-12345",
+    "source": "ImmoMio",
+    "title": "1 Zimmer Wohnung in Hamburg",
+    "city": "Hamburg",
+    "location": "Hamburg-Wandsbek",
+    "warmRent": 645,
+    "rooms": 1,
+    "area": 35,
+    "url": "https://example.com/immomio-12345"
+  }
+]
